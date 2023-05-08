@@ -9,3 +9,14 @@ if(email.includes("@") === false) {
 }
 console.log(email.indexOf('e'));
 console.log(email.trim());
+
+const arr = ['a', 'b', 'c'];
+arr.pop();
+arr.push('d');
+console.log(arr);
+
+const date = new Date();
+console.log(date.getFullYear());
+
+const random = Math.random() * 20;
+console.log(Math.floor(random));
