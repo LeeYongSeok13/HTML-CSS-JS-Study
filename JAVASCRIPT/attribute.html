@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attribute</title>
+    <style>
+        .red {
+            color:red;
+        }
+        .fz20 {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.gilbut.co.kr">길벗</a>
+    <script>
+        const aEl = document.querySelector("a");
+        aEl.setAttribute("href","https://www.naver.com"); // href 바꾸기
+        aEl.setAttribute("target", "_blank");   // target 추가
+        // aEl.removeAttribute("href") href 삭제
+        //aEl.classList.add("red"); 기존 유지
+        //aEl.setAttribute("class","red"); 새로운것 생성
+    </script>
+</body>
+</html>

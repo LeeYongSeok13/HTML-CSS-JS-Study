@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>classList</title>
+    <style>
+        .styleSet1 {
+            color: red;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <p id="text">text</p>
+    <script>
+        const pEl = document.querySelector('#text');
+        //pEl.classList.add("styleSet1"); class 추가
+        //pEl.classList.remove("styleSet1"); class 삭제
+        setInterval(()=> {
+            pEl.classList.toggle("styleSet1"); // 없을땐 만들고, 있을땐 삭제한다.
+        }, 1000);
+    </script>
+</body>
+</html>
