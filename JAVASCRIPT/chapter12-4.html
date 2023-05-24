@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12.4 노드 추가/삭제하기</title>
+</head>
+<body>
+    <p>text</p>
+    <p>text</p>
+    <p>text</p>
+    <p>text</p>
+    <p>text</p>
+    <h1>text</h1>
+    <script>
+        const aEl = document.createElement("a");
+        const textNode = document.createTextNode("링크");
+        const hrefAttr = document.createAttribute("href");
+
+        hrefAttr.value = 'https://www.gilbut.co.kr';
+        aEl.setAttributeNode(hrefAttr);
+        aEl.appendChild(textNode);
+        document.body.appendChild(aEl);
+
+        //삭제
+        //const hEl = document.querySelector("h1");
+        //hEl.parentNode.removeChild(hEl);
+
+        // p노드 삭제
+        //const pEl = document.querySelectorAll("p");
+        //pEl.forEach((el)=>{
+        //    el.parentNode.removeChild(el);
+        //});
+
+        // p노드 삭제2
+        const childNodes = document.body.childNodes;
+        childNodes.forEach((node)=>{
+            console.log(node.nodeName);
+            if(node.nodeName === 'P'){
+                node.parentNode.removeChild(node);
+            }
+        })
+        console.log(childNodes);
+    </script>
+</body>
+</html>

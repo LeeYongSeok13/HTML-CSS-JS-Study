@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkbox</title>
+</head>
+<body>
+    <form>
+        <label><input type="radio" name="fruits" value="apple">사과</label>
+        <label><input type="radio" name="fruits" value="banana" checked>바나나</label>
+        <label><input type="radio" name="fruits" value="orange">오렌지</label>
+        <label><input type="radio" name="fruits" value="melon" checked>멜론</label>
+    </form>
+    <script>
+        const inputEls = document.querySelectorAll("input[type='radio']");
+        inputEls.forEach((el)=>{
+                if(el.checked){
+                    console.log(el.value);
+            }
+        })
+    </script>
+</body>
+</html>

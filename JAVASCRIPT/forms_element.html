@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms_element</title>
+</head>
+<body>
+    <form name="frm1">
+        <label for="uname">이름</label>
+        <input type="text" id="uname" name="uname" value="수코딩">
+        <label for="age">나이</label>
+        <input type="text" id="age" name="age">
+        <label for="password">비밀번호</label>
+        <input type="password" id="pw" name="pw">
+        <label for="gender">성별</label>
+        <select id="gender" name="gender">
+            <option value="male">male</option>
+            <option value="female">female</option>
+        </select>
+        <textarea name="txtarea" id="" cols="30" rows="10"></textarea>
+        <button type="submit" name="btn">전송</button>
+    </form>
+    <script>
+        const frmEl = document.frm1;
+        console.log(frmEl.elements.uname.value);
+    </script>
+</body>
+</html>
