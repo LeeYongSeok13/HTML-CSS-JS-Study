@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event_cancel</title>
+</head>
+<body>
+    <a href="https://naver.com">네이버 이동</a>
+    <script>
+        const aEl = document.querySelector('a');
+        aEl.addEventListener("click", (e)=>{
+            e.preventDefault();
+        });
+
+        //복수개
+        // const aEls = document.querySelectorAll('a');
+        // aEls.forEach(el => {
+        // el.addEventListener("click", (e)=>{
+        // e.preventDefault();
+        // });   
+        //});
+    </script>
+</body>
+</html>
