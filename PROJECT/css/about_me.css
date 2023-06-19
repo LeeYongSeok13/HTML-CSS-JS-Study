@@ -25,12 +25,6 @@ section .title p {
     font-size: 1.15rem;
 }
 
-section .about-self::after {
-    content:"";
-    clear: both;
-    display:block;
-}
-
 section .about-self .left {
     width: 50%;
     float: left;
